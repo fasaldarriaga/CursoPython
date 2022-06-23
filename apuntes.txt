@@ -1,0 +1,8 @@
+Apuntes del curso de fundamentos en Python
+
+Comandos utiles: 
+ctrl + k + c ----> Comentar lineas selecionadas
+ctrl + k + u ----> Descomentar lineas seleccionadas
+
+Jerarquia de operaciones: Se aplica la Jerarquia aritmetica
+ 
