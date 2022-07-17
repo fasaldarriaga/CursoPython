@@ -13,9 +13,10 @@
 # print("La letra beta es:\n\t \u03b2 ") # \n: espacio , \t: tabulacion (4 por defecto) \u03b2: Representacion de beta en sistema "asis"
 
 # Caracteres de escape
-from re import T
+# from re import T
 
 
-print("Halo world", end=" ")  # Se pone un espacio en vez de un salto de linea
+# Se pone un espacio en vez de un salto de linea
+print("Halo \n world", end=" ")
 print("Otra vez", end="\t")
 print("Y otra vez")
