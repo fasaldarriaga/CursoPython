@@ -4,13 +4,18 @@
 # Que elimine de la primera lista los nombres de la segunda
 # Que imprima la primera lista indicando que se han eliminado los elementos que estaban tambien en la segunda
 
-def agregar_datos(lista, valor):
+def agregar_datos(lista, elementos):
     """
-    Funcion que agrega un dato a una lista especificada
+    Funcion que solicita al usuario una lista y un numero de elementos a agregar
     """
-    if valor == ' ':
-        valor = 'No especificado'
-    lista.append(valor)
+    # if valor == ' ':
+    #     valor = 'No especificado'
+    # lista.append(valor)
+
+    for i in range(elementos):
+        valor = input('Ingrese el elemento {}: '.format(i + 1)).title()
+        lista.append(valor)
+
     return lista
 
 
@@ -35,17 +40,12 @@ lista1 = []
 lista2 = []
 
 nombres1 = int(input('¿Cuantos elementos desea registrar en la lista 1?: '))
+
+agregar_datos(lista1, nombres1)
+
 nombres2 = int(input('¿Cuantos elementos desea registrar en la lista 2?: '))
 
-for i in range(nombres1):
-    elemento1 = input(
-        f'Ingrese el nombre del elemento {i + 1} de la lista 1: ').title()
-    lista1 = agregar_datos(lista1, elemento1)
-
-for j in range(nombres2):
-    elemento2 = input(
-        f'Ingrese el nombre del elemento {j + 1} de la lista 2: ').title()
-    lista2 = agregar_datos(lista2, elemento2)
+agregar_datos(lista2, nombres2)
 
 print('Las listas originales son:')
 print(f'La lista 1 es: {lista1}')
